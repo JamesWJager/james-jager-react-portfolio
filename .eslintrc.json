@@ -1,0 +1,111 @@
+{
+    "root": true,
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "useJSXTextNode": true,
+      "overrides": [
+        {
+          "files": ["*.ts", "*.tsx"],
+          "parserOptions": {
+            "project": ["./tsconfig.json"]
+          }
+        }
+      ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".ts", ".tsx"]
+        }
+      }
+    },
+    "plugins": [
+      "react-hooks",
+      "@typescript-eslint",
+      "jsx-a11y",
+      "import",
+      "simple-import-sort",
+      "unused-imports",
+      "prettier"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:react-hooks/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "require-jsdoc": "off",
+      "semi": "off",
+      "comma-dangle": [
+        "warn",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "always-multiline"
+        }
+      ],
+      "no-underscore-dangle": 0,
+      "@typescript-eslint/semi": ["warn", "never"],
+  
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-use-before-define": "off",
+      "react/prop-types": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "^_",
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "@typescript-eslint/consistent-type-imports": "error",
+      "no-use-before-define": "off",
+      "import/prefer-default-export": "off",
+      "unused-imports/no-unused-imports-ts": 2,
+      "import/no-cycle": 1,
+      "import/extensions": 0,
+      "sort-imports": "off",
+      "import/first": "error",
+      "import/newline-after-import": "error",
+      "import/no-duplicates": "error",
+      "simple-import-sort/exports": "error",
+      "simple-import-sort/imports": [
+        "error",
+        {
+          "groups": [
+            ["^react$", "^react", "^@react"],
+            ["^@?\\w"],
+            ["@/context", "@/hooks", "@/layout", "@/components"],
+            ["@/api", "@/services", "@/utils"],
+            ["@/types", "\\.types$"],
+            ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+            ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+          ]
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": ["*.js"],
+        "rules": {
+          "@typescript-eslint/no-var-requires": "off"
+        }
+      }
+    ]
+  }

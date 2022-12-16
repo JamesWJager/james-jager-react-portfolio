@@ -1,0 +1,21 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+      "typescript.tsdk": "node_modules/typescript/lib",
+      "search.exclude": {
+        "public/**": true,
+        "node_modules/**": true
+      },
+      "files.exclude": {
+        "**/.cache": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.husky": true,
+        "**/.idea": true,
+        "**/public": false,
+        "**/Thumbs.db": true,
+        "node_modules/**": true
+      },
+      "javascript.preferences.importModuleSpecifier": "shortest"
+}
