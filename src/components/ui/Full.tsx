@@ -4,10 +4,11 @@ import classNames from 'classnames'
 
 import type { DivPropsWithChildren } from '@/@types/DivProps'
 
-export const FullScreen: React.FC<DivPropsWithChildren> = props => {
+export const Full: React.FC<DivPropsWithChildren> = props => {
   const { children, className } = props
+
   return (
-    <div {...props} className={classNames('w-screen h-screen', className)}>
+    <div {...props} className={classNames('w-full h-full', className)}>
       {children}
     </div>
   )
