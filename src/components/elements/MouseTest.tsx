@@ -7,6 +7,8 @@ import { OnMouseMoveContext } from '../../context/OnMouseMoveContext'
 export const MouseTest: React.FC = () => {
   const mouse = useContext(OnMouseMoveContext)
 
+  console.log('mouseTest')
+
   useFrame(() => {
     console.log(mouse?.current)
   })

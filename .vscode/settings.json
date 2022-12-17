@@ -17,5 +17,8 @@
         "**/Thumbs.db": true,
         "node_modules/**": true
       },
-      "javascript.preferences.importModuleSpecifier": "shortest"
+      "javascript.preferences.importModuleSpecifier": "shortest",
+      "cSpell.words": [
+        "lerp"
+      ]
 }

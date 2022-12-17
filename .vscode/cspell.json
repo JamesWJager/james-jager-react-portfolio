@@ -5,6 +5,10 @@
     "dictionaries": [],
     "words": [
         "craco",
+        "glsl",
+        "glslify",
+        "highp",
+        "snoise",
         "svgr",
         "tailwindcss",
         "TTFB"

@@ -25,6 +25,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/*.ts", "./src/*.tsx", "images.d.ts"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/*.ts", "./src/*.tsx", "images.d.ts", "src/components/three/components/Planet.js", "src/components/three/components/Planet.js"],
   "exclude": ["node_modules", "tsconfig.json"]
 }
