@@ -25,6 +25,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/*.ts", "./src/*.tsx", "images.d.ts", "src/components/three/components/Planet.js", "src/components/three/components/Planet.js"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/*.ts", "./src/*.tsx", "images.d.ts", "src/components/three/components/Planet.js", "src/components/three/components/Planet.js", "src/components/three/components/Planet.jsx", "src/components/three/components/Planet.jsx", "src/components/three/components/SpaceShip.jsx", "src/components/three/components/SpaceShip.jsx", "src/components/three/Canvas.tsx", "src/components/three/Canvas.tsx", "src/components/three/Scene.jsx", "src/components/three/Scene.jsx"],
   "exclude": ["node_modules", "tsconfig.json"]
 }
